@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/LOGO2.jpg" />
+    <link rel="stylesheet" href="Contacts.css" />
+    <title>Intro to Computing</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/LOGO2.jpg" alt="logo" />
+        <a href="Index.html">WEB</a>
+      </div>
+
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="About.html#about">About</a>
+        <a href="Gallery.html#project">Gallery</a>
+        <a href="Members.html#Members">Members</a>
+        <a href="Contacts.html#contact">Contact</a>
+      </nav>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+           <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skilll">Gallery</a></li>
+          <li><a class="nav-link" href="#project">Members</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Background -->
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">Contact</h1>
+          <form data-aos="zoom-in-down" data-aos-delay="300" class="contact-form">
+            <div class="input">
+              <input type="text" placeholder="Name..." required />
+              <input type="email" placeholder="Email..." required />
+              <input type="tel" placeholder="Phone..." />
+              <input type="text" placeholder="Subject..." />
+            </div>
+            <textarea name="message" placeholder="Message..." required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+      <h1>We Value Your Feedback 💬</h1>
+      <p>Your thoughts help us improve. Please take a moment to share your experience.</p>
+
+      <form id="feedbackForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label>Rate Your Experience</label>
+        <div class="rating">
+          <input type="radio" name="star" id="star5" value="5" /><label for="star5">⭐</label>
+          <input type="radio" name="star" id="star4" value="4" /><label for="star4">⭐</label>
+          <input type="radio" name="star" id="star3" value="3" /><label for="star3">⭐</label>
+          <input type="radio" name="star" id="star2" value="2" /><label for="star2">⭐</label>
+          <input type="radio" name="star" id="star1" value="1" /><label for="star1">⭐</label>
+        </div>
+
+        <label for="message">Your Feedback</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your comments here..." required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+
+      <div class="thank-you" id="thankYouMsg">🎉 Thank you for your feedback!</div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="register">
+      <h2>Contact & Register</h2>
+      <p>
+        Want to get in touch or create an account?<br />
+        Fill out the registration form below or email us at
+        <a href="mailto:your@email.com" style="color:#00ffd0;">your@email.com</a>.
+      </p>
+
+      <form
+        style="margin:32px auto 0; max-width:350px; background:rgba(4, 5, 5, 0.7); padding:28px 24px; border-radius:18px; box-shadow:0 2px 16px #0005; display:flex; flex-direction:column; gap:18px;"
+      >
+        <label for="reg-email" style="text-align:left; color:#fff;">Email:</label>
+        <input
+          type="email"
+          id="reg-email"
+          name="email"
+          required
+          style="padding:10px; border-radius:6px; border:none; font-size:1rem;"
+        />
+
+        <label for="password" style="text-align:left; color:#fff;">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          style="padding:10px; border-radius:6px; border:none; font-size:1rem;"
+        />
+
+        <button
+          type="submit"
+          style="margin-top:10px; padding:10px; border-radius:6px; border:none; background:linear-gradient(90deg,#ff0055,#00ffd0,#3a86ff,#ff0055); color:#111; font-weight:700; font-size:1.1rem; cursor:pointer; transition:background 0.3s;"
+        >
+          Register
+        </button>
+      </form>
+
+      <p style="margin-top:18px; color:#050303; font-size:0.98rem;">
+        Already have an account? <a href="#" style="color:#00ffd0;">Sign in</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="assets/Logo.jpg" alt="logo" />
+            <a href="#">Our Website</a>
+          </div>
+          <p>Our journey</p>
+
+          <div class="social-media-container">
+            <div class="social-media">
+              <a href="https://www.instagram.com" target="_blank">
+                <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.youtube.com" target="_blank">
+                <box-icon color="#fff" name="youtube" type="logo"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.facebook.com" target="_blank">
+                <box-icon color="#fff" name="facebook-circle" type="logo"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://www.tiktok.com" target="_blank">
+                <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="information">
+            <h1>Members</h1>
+            <ul>
+              <li><a href="#">Elcid Justine Taroma</a></li>
+              <li><a href="#">Kurt Racel Jacob</a></li>
+              <li><a href="#">Pauleen Claire Rivera</a></li>
+              <li><a href="#">Jomar Leoj Yulde</a></li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Subjects</h1>
+            <ul>
+              <li><a href="#">Pathfit</a></li>
+              <li><a href="#">Intro to Computing</a></li>
+              <li><a href="#">Fundamentals</a></li>
+              <li><a href="#">NSTP</a></li>
+              <li><a href="#">Other Experiences</a></li>
+            </ul>
+          </div>
+
+          <div class="navigation">
+            <h1>Navigations</h1>
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="About.html#about">About</a></li>
+              <li><a href="Gallery.html#project">Gallery</a></li>
+              <li><a href="Members.html#Members">Members</a></li>
+              <li><a href="Contacts.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="java.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #f7f6f6;
+  /* ---------- Fonts & body ---------- */
+  background:url("assets/Background\ image.jpg"); /* Updated: Set to just the GIF as requested, removing the gradient */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  width: 70%;
+ 
+}
+
+
+.container {
+  padding: 1rem 6rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  height: 10vh;
+  z-index: 9999;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo img {
+  height: 30px;
+  width: 30px;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s linear;
+}
+
+header nav a::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s linear;
+}
+
+header nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s linear;
+}
+
+header .extra-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+header .extra-nav button {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 12px;
+  transition: 0.3s linear;
+}
+
+header .extra-nav button:hover {
+  background: #fff;
+  color: #000;
+  transition: 0.3s linear;
+}
+
+header .hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+header .mobile-nav {
+  display: none;
+}
+
+
+
+
+.member-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      background: rgba(248, 247, 247, 0.8);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 40px 60px;
+      width: 85%;
+      max-width: 1000px;
+        margin: 40px auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative; right: 20%; left: 20%;
+    }
+
+    .mirror-frame {
+      flex-shrink: 0;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #060202, #020304);
+      box-shadow: inset 5px 5px 10px #06090c, inset -5px -5px 10px #040101;
+      overflow: hidden;
+     
+    }
+
+    .mirror-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+     
+    }
+
+    .info-section {
+      flex-grow: 1;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      padding: 25px;
+      line-height: 1.7;
+      color: #333;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #222;
+      font-size: 1.8em;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 25px;
+      text-decoration: none;
+      color: white;
+      background: #333;
+      padding: 10px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: #555;
+    }
+
+
+/* --- MEMBERS SECTION --- */
+.members-section {
+  background: linear-gradient(145deg, #050506, #f8fafc);
+  min-height: 100vh;
+  padding: 0 0 60px 0;
+  overflow-y: auto;
+  position: relative; left: 20%; right: 20%; 
+}
+
+.section-title {
+  background-color: #b7d7a8;
+  color: #1b4d3e;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+.members-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: rgba(30, 30, 30, 0.85);
+  box-shadow: 0 12px 35px rgba(22, 22, 22, 0.1);
+  border-radius: 25px;
+  padding: 50px 80px;
+  width: 90%;
+  max-width: 1100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.member-details {
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.member-details h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.member-details p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #232323;
+}
+
+.stars {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  background: white;
+  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+    22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+    38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+    53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+    68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+    83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+    98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+    18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
+    35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+    50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+    65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+    80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+    95vw 75vh 2px white;
+  animation: twinkle 8s infinite linear;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  animation: shoot 3s infinite ease-in;
+}
+
+.shooting-star:nth-child(1) {
+  top: 20%;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+  top: 35%;
+  left: -100px;
+  animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 50%;
+  left: -100px;
+  animation-delay: 2s;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0) rotate(25deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(50vh) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+/* Additional twinkling stars with different animation timing */
+.stars::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+    33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
+    57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
+    81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
+    3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
+    27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
+    51vw 92vh 2px white, 59vw 78vh 1px white;
+  animation: twinkle 6s infinite linear reverse;
+}

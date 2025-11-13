@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/LOGO2.jpg" />
+    <link rel="stylesheet" href="style2.css" /> 
+     <link rel="stylesheet" href="Members2.css" /> 
+    <title>Subject</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="logo">
+        <img src="assets/LOGO2.jpg" alt="logo" />
+       <a href="Picture.html">WEB</a>
+      </div>
+
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="About.html#about">About</a>
+        <a href="Gallery.html#project">Gallery</a>
+        <a href="Members.html#Members">Members</a>
+        <a href="Contacts.html#contact">Contact</a>
+      </nav>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="stars"></div>
+    <div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skilll">Gallery</a></li>
+          <li><a class="nav-link" href="#project">Members</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+
+
+<!-- HOME -->
+<div class="page" id="homePage">
+    <div class="hero">  
+        <h1>OUR FIRST YEAR EXPERIENCE</h1>
+        <p>Our first year in college was full of new experiences, 
+          challenges, and memories that shaped us into who we are. 
+          From late-night talks to lessons learned along the way, 
+          every moment helped us grow and discover ourselves.</p>
+    </div>
+    
+    <div class="choose">CHOOSE THE BOOKS CLICK THE COLOR LINK</div>
+
+    <div class="books">
+        <div class="book" onclick="openGallery()"><a href="BookA.html">Book A</a></div>        
+        <div class="book" onclick="openGallery()"><a href="BookB.html">Book B</a></div>
+        <div class="book" onclick="openGallery()"><a href="BookC.html">Book C</a></div>
+        <div class="book" onclick="openGallery()"><a href="BookD.html">Book D</a></div>
+        <div class="book" onclick="openGallery()"><a href="BookE.html">Book E</a></div>
+    </div>
+    </div>
+    
+
+
+
+
+<!-- ABOUT -->
+<div class="page" id="aboutPage">
+    <div class="hero">
+        <h1>ABOUT</h1>
+        <p>This page describes the purpose of our book collection.</p>
+    </div>
+</div>
+
+<!-- MENU -->
+<div class="page" id="menuPage">
+    <div class="hero">
+        <h1>MENU</h1>
+        <p>Explore categories, collections, and memories.</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="page" id="galleryPage">
+    <div class="hero">
+        <h1>GALLERY</h1>
+        <p>Choose a picture from the selected book.</p>
+    </div>
+
+<!-- CONTACT -->
+<div class="page" id="contactPage">
+    <div class="hero">
+        <h1>CONTACT</h1>
+        <p>Email us for inquiries or suggestions.</p>
+    </div>
+</div>
+
+<!-- FINAL PAGE (FRAME) -->
+<div class="page" id="finalPage">
+    <div class="hero">
+        <h1>SELECTED PICTURE</h1>
+    </div>
+
+    <div class="frame">
+        <img id="frameImage" src="assets/Background image.jpg" />
+    </div>
+
+    <div class="buttons">
+        <button onclick="showPage('galleryPage')">Previous</button>
+        <button onclick="showPage('homePage')">Next</button>
+    </div>
+</div>
+    <script src="java.js"></script>
+
+    <!--SHOOTING STAR-->
+    <div class="stars"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+<!--FOOTER-->
+    <footer>
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="assets/Logo.jpg" alt="logo" />
+            <a href="">Our Website</a>
+          </div>          
+          <!-- Short About -->
+          <p>
+            Our journey
+          </p>     
+          <!-- Social Media -->
+          <div class="social-media-container">
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+              <a href="https://www.facebook.com/kurt.jacob.3386" target="_blank"></a>       
+            </div>
+            <div class="social-media">
+              <box-icon color="#fff" name="youtube" type="logo"></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon
+                color="#fff"
+                name="facebook-circle"
+                type="logo"
+              ></box-icon>
+            </div>
+            <div class="social-media">
+              <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+            </div>
+          </div>
+        </div>
+        <div class="link-container">
+          <div class="information">
+            <h1>Members</h1>
+            <ul>
+              <li>
+                <a href="#">Elcid Justine Taroma</a>
+              </li>
+              <li>
+                <a href="#">Kurt Racel Jacob</a>
+              </li>
+              <li>
+                <a href="#">Pauleen Claire Rivera</a>
+              </li>
+              <li>
+                <a href="#">Jomar Leooj Yulde</a>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Subjects</h1>
+            <ul>
+              <li>
+                <a href="#">Pathfit</a>
+              </li>
+              <li>
+                <a href="#">Intro to Computing</a>
+              </li>
+              <li>
+                <a href="#">Fundamentals</a>
+              </li>
+              <li>
+                <a href="#">NSTP</a>
+              </li>
+              <li>
+                <a href="#">Other Experiences</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation">
+            <h1>Navigations</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">Members</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="java.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
